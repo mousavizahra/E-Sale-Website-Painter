@@ -1,0 +1,268 @@
+body {
+  background-color: #CBCBCB;
+}
+
+nav {
+  background-color: #CBCBCB;
+  color: #060711;
+}
+nav .dropdown-menu {
+  background-color: #CBCBCB;
+  color: #fff;
+}
+nav .dropdown-item:hover {
+  background-color: #060711;
+  color: #fff;
+}
+nav span {
+  color: #060711;
+}
+
+#showcase {
+  opacity: 0.8;
+}
+#showcase button {
+  background-color: #060711;
+  color: #fff;
+  width: 15%;
+  border-radius: 5%;
+  height: 10%;
+  font-size: 1.5rem;
+}
+#showcase button:hover {
+  background-color: #1A5297;
+  color: #fff;
+}
+#showcase i {
+  color: #fff;
+  padding-right: 15px;
+}
+
+#about h2 {
+  text-align: center;
+  margin-top: 100px;
+  color: #fff;
+}
+#about .row {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+#about img {
+  width: 280px;
+  height: 560px;
+  border-bottom-left-radius: 280px;
+  border-top-left-radius: 280px;
+}
+#about p {
+  background-color: #1A5297;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #fff;
+}
+
+#collection {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#collection .row {
+  margin-top: 130px;
+}
+#collection h2 {
+  text-align: center;
+  margin-top: 100px;
+  color: #fff;
+}
+#collection .image {
+  padding: 5px 5px;
+  margin: 50px;
+  margin-left: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.7s;
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+}
+#collection .image::before {
+  content: "";
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #fff;
+  right: -40px;
+  bottom: -40px;
+  transition: all 0.7s;
+}
+#collection .image:hover::before {
+  width: 200%;
+  height: 250%;
+}
+#collection h3 {
+  text-align: center;
+  margin-top: 25px;
+}
+#collection button {
+  margin-top: 20px;
+  margin-left: 70px;
+  background-color: #060711;
+}
+#collection button a {
+  color: #fff;
+}
+#collection button a:hover {
+  text-decoration: none;
+}
+
+#popular .row {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+#popular h2 {
+  text-align: center;
+  margin-top: 100px;
+  color: #fff;
+}
+#popular .main-container {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#popular .card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+#popular .card:hover {
+  transform: rotatey(180deg);
+}
+#popular .thefront {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  opacity: 0.8;
+}
+#popular .thebackend {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-color: #1A5297;
+  text-align: center;
+  color: #fff;
+}
+#popular img {
+  width: 100%;
+  height: 100%;
+}
+#popular button {
+  background-color: #060711;
+  color: #fff;
+  width: 50%;
+  font-size: 1.5rem;
+}
+#popular button:hover {
+  background-color: #CBCBCB;
+  color: #fff;
+}
+
+#contact .form-group {
+  opacity: 0.3;
+  border-left: 3px solid #060711;
+}
+#contact .btn {
+  background-color: #060711;
+  color: #fff;
+  width: 30%;
+}
+#contact .row {
+  margin-top: 50px;
+}
+#contact h2 {
+  text-align: center;
+  margin-top: 100px;
+  color: #fff;
+  margin-bottom: 100px;
+}
+#contact .wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+#contact ul {
+  margin-left: 570px;
+}
+#contact .wrapper .title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+#contact .menu {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+#contact .menu .list-item {
+  height: 60px;
+  padding: 2px;
+  margin: 4px 0;
+  width: 60px;
+  border-radius: 5px;
+}
+#contact .list-item .fa {
+  text-align: center;
+  line-height: 60px;
+}
+#contact .list-item a span {
+  width: 0;
+  left: 40px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  font-family: "Roboto" sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.6;
+  white-space: nowrap;
+  line-height: 60px;
+  transition: 0.25s;
+}
+#contact .list-item a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+#contact .list-item a:hover span {
+  width: auto;
+  padding: 0 20px;
+  overflow: visible;
+}
+#contact span {
+  background-color: #060711;
+}
+#contact a {
+  background-color: #060711;
+}
+#contact i {
+  color: #fff;
+}
+#contact img {
+  margin-top: -370px;
+}/*# sourceMappingURL=style.css.map */

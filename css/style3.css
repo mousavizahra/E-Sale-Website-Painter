@@ -1,0 +1,53 @@
+:root{
+  --first-color:#CBCBCB;
+  --background-color:#060711;
+  --second-color:#1A5297;     
+}
+body{
+    background-color: var(--first-color);
+}
+nav {
+    background-color: var(--first-color);
+    color: var(--background-color);
+  }
+  nav .dropdown-menu {
+    background-color: var(--first-color);
+    color: #fff;
+  }
+  nav .dropdown-item:hover {
+    background-color: var(--background-color);
+    color: #fff;
+  }
+  nav span {
+    color: var(--background-color) ;
+  }
+  nav a{
+    color:var(--background-color);
+  }
+  nav a:hover{
+    color: var(--background-color);
+    text-decoration: none;
+  }
+.row{
+    margin-top: 100px;
+}
+.col-lg-5{
+    margin-left: 30px;
+    margin-top: 120px;
+}
+.col-lg-5 .btn{
+    background-color: var(--background-color);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 30%;
+}
+.col-lg-5 .btn:hover{
+    background-color:var(--second-color);
+}
+.col-lg-5 .btn a{
+  color: #fff;
+}
+.col-lg-5 .btn a:hover{
+  text-decoration: none;
+  color: #fff;
+}
